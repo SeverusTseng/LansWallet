@@ -1,0 +1,6 @@
+framework module Pods_LansWallet {
+  umbrella header "Pods-LansWallet-umbrella.h"
+
+  export *
+  module * { export * }
+}

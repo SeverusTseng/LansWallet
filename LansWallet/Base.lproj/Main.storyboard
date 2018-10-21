@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SD0-dc-RDd">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="s8n-U6-MrV">
+            <objects>
+                <viewController id="dLz-Ns-m0F" customClass="LoginPageViewController" customModule="LansWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6wm-zE-hzt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(234)567-9810" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Id-fD-ueb">
+                                <rect key="frame" x="93.000000000000014" y="274" width="189.33333333333337" height="33"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" textContentType="tel"/>
+                                <connections>
+                                    <action selector="transform:" destination="dLz-Ns-m0F" eventType="editingChanged" id="tXJ-iH-wha"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="We'll text a code to verify your phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85a-ft-5iZ">
+                                <rect key="frame" x="38" y="194" width="270" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your number?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAt-6U-FDW">
+                                <rect key="frame" x="38" y="156" width="237" height="30"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOa-XH-K4b">
+                                <rect key="frame" x="38" y="236" width="174" height="30"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <color key="textColor" red="0.39932520986496001" green="0.66248312824130684" blue="0.27586811821800278" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbs-zA-vOc">
+                                <rect key="frame" x="38" y="315" width="294" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="TZz-05-yS7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CM-EB-GCl">
+                                <rect key="frame" x="271" y="422" width="61" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="Aah-ic-J74"/>
+                                    <constraint firstAttribute="width" constant="61" id="jfo-cJ-A8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <state key="normal" title="✅"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="dLz-Ns-m0F" eventType="touchUpInside" id="IhR-lX-0X3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORA-M4-T4Q">
+                                <rect key="frame" x="50.333333333333336" y="274" width="27.333333333333336" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="q6J-fS-ozG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1CM-EB-GCl" firstAttribute="centerY" secondItem="6wm-zE-hzt" secondAttribute="centerY" constant="55.5" id="05q-X8-VcT"/>
+                            <constraint firstItem="NOa-XH-K4b" firstAttribute="centerY" secondItem="6wm-zE-hzt" secondAttribute="centerY" constant="-155" id="BEN-xh-wjJ"/>
+                            <constraint firstItem="gAt-6U-FDW" firstAttribute="centerX" secondItem="6wm-zE-hzt" secondAttribute="centerX" constant="-31" id="BQl-tI-rMv"/>
+                            <constraint firstItem="Jbs-zA-vOc" firstAttribute="top" secondItem="2Id-fD-ueb" secondAttribute="bottom" constant="8" id="DvX-1I-9QH"/>
+                            <constraint firstItem="Jbs-zA-vOc" firstAttribute="leading" secondItem="yJ8-Z8-yfC" secondAttribute="leading" constant="38" id="G70-Wb-okZ"/>
+                            <constraint firstItem="85a-ft-5iZ" firstAttribute="centerX" secondItem="6wm-zE-hzt" secondAttribute="centerX" constant="-14.5" id="KEV-om-78i"/>
+                            <constraint firstItem="NOa-XH-K4b" firstAttribute="centerX" secondItem="6wm-zE-hzt" secondAttribute="centerX" constant="-62.5" id="MC3-VI-VTn"/>
+                            <constraint firstItem="2Id-fD-ueb" firstAttribute="centerX" secondItem="6wm-zE-hzt" secondAttribute="centerX" id="Nys-D6-gyi"/>
+                            <constraint firstItem="85a-ft-5iZ" firstAttribute="centerY" secondItem="6wm-zE-hzt" secondAttribute="centerY" constant="-201.5" id="YZq-A0-jGM"/>
+                            <constraint firstItem="1CM-EB-GCl" firstAttribute="centerX" secondItem="6wm-zE-hzt" secondAttribute="centerX" constant="114" id="diJ-9S-yuU"/>
+                            <constraint firstItem="gAt-6U-FDW" firstAttribute="centerY" secondItem="6wm-zE-hzt" secondAttribute="centerY" constant="-235" id="kDP-81-OZ6"/>
+                            <constraint firstItem="2Id-fD-ueb" firstAttribute="centerY" secondItem="6wm-zE-hzt" secondAttribute="centerY" constant="-115.5" id="nZ9-oe-Edz"/>
+                            <constraint firstItem="ORA-M4-T4Q" firstAttribute="centerY" secondItem="6wm-zE-hzt" secondAttribute="centerY" constant="-115.5" id="qEN-9p-wFl"/>
+                            <constraint firstItem="ORA-M4-T4Q" firstAttribute="centerX" secondItem="6wm-zE-hzt" secondAttribute="centerX" constant="-123.5" id="wsN-vy-mng"/>
+                            <constraint firstItem="yJ8-Z8-yfC" firstAttribute="trailing" secondItem="Jbs-zA-vOc" secondAttribute="trailing" constant="43" id="xcr-6O-afM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yJ8-Z8-yfC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="Gi0-11-Qo6"/>
+                    <connections>
+                        <outlet property="PhoneNumber" destination="2Id-fD-ueb" id="wVQ-KI-z5L"/>
+                        <outlet property="errorMessage" destination="Jbs-zA-vOc" id="eBb-L5-Ekd"/>
+                        <outlet property="phoneNumber" destination="2Id-fD-ueb" id="xC3-sH-NzK"/>
+                        <outlet property="sendMessageButton" destination="1CM-EB-GCl" id="N4q-2r-CQ3"/>
+                        <segue destination="Ptm-rT-bI9" kind="show" identifier="verificationPage" id="M3c-Ds-Oay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vR-VA-8me" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="132"/>
+        </scene>
+        <!--Verification View Controller-->
+        <scene sceneID="brI-JE-8LK">
+            <objects>
+                <viewController id="Ptm-rT-bI9" customClass="VerificationViewController" customModule="LansWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="verificationPage" id="LIK-Fj-ynZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the code?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUh-Ic-anc">
+                                <rect key="frame" x="51" y="201" width="190" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="34f-NA-5iW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the six-digit code sent to you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbE-O4-rOg">
+                                <rect key="frame" x="51" y="239" width="254" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-6Z-aqL">
+                                <rect key="frame" x="123" y="433" width="129" height="34"/>
+                                <color key="backgroundColor" red="0.39932520989999998" green="0.66248312819999999" blue="0.27586811820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Resend code">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResendCode:" destination="Ptm-rT-bI9" eventType="touchUpInside" id="iur-n2-J61"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEy-GU-mfg">
+                                <rect key="frame" x="277" y="460" width="61" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <state key="normal" title="✅"/>
+                                <connections>
+                                    <action selector="VerifyCode:" destination="Ptm-rT-bI9" eventType="touchUpInside" id="TtG-ei-Fq5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123456" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UYJ-3d-L8T">
+                                <rect key="frame" x="135.33333333333334" y="319" width="104.66666666666666" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-Je-66z">
+                                <rect key="frame" x="51" y="281" width="199" height="30"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <color key="textColor" red="0.40664886919999998" green="0.66248312819999999" blue="0.28078758100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lU-AA-HRT">
+                                <rect key="frame" x="51" y="360" width="287" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iRv-Ev-qgk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7lU-AA-HRT" firstAttribute="leading" secondItem="Ybe-nk-gO4" secondAttribute="leading" constant="51" id="0Ue-NE-nI6"/>
+                            <constraint firstItem="xbE-O4-rOg" firstAttribute="leading" secondItem="Ybe-nk-gO4" secondAttribute="leading" constant="51" id="3u6-UK-G5Z"/>
+                            <constraint firstItem="UYJ-3d-L8T" firstAttribute="leading" secondItem="Ybe-nk-gO4" secondAttribute="leading" constant="135.33000000000001" id="5ou-XJ-YSR"/>
+                            <constraint firstItem="XEy-GU-mfg" firstAttribute="top" secondItem="7lU-AA-HRT" secondAttribute="bottom" constant="70" id="6QW-2s-Tkk"/>
+                            <constraint firstItem="Ybe-nk-gO4" firstAttribute="trailing" secondItem="5RO-6Z-aqL" secondAttribute="trailing" constant="123" id="Ahr-3D-PeE"/>
+                            <constraint firstItem="Ybe-nk-gO4" firstAttribute="trailing" secondItem="7lU-AA-HRT" secondAttribute="trailing" constant="37" id="E3o-r6-pvU"/>
+                            <constraint firstItem="5RO-6Z-aqL" firstAttribute="leading" secondItem="Ybe-nk-gO4" secondAttribute="leading" constant="123" id="FQ1-Ut-TKa"/>
+                            <constraint firstItem="SUh-Ic-anc" firstAttribute="leading" secondItem="Ybe-nk-gO4" secondAttribute="leading" constant="51" id="Mqc-lh-ewV"/>
+                            <constraint firstItem="Ybe-nk-gO4" firstAttribute="trailing" secondItem="b0n-Je-66z" secondAttribute="trailing" constant="125" id="WRc-BT-9eq"/>
+                            <constraint firstItem="Ybe-nk-gO4" firstAttribute="trailing" secondItem="xbE-O4-rOg" secondAttribute="trailing" constant="70" id="XLP-Ds-AiJ"/>
+                            <constraint firstItem="xbE-O4-rOg" firstAttribute="top" secondItem="SUh-Ic-anc" secondAttribute="bottom" constant="8" id="Z7r-2v-QpI"/>
+                            <constraint firstItem="Ybe-nk-gO4" firstAttribute="trailing" secondItem="SUh-Ic-anc" secondAttribute="trailing" constant="134" id="bwo-Zn-Na2"/>
+                            <constraint firstItem="b0n-Je-66z" firstAttribute="top" secondItem="xbE-O4-rOg" secondAttribute="bottom" constant="21" id="c37-mE-3LU"/>
+                            <constraint firstItem="Ybe-nk-gO4" firstAttribute="trailing" secondItem="UYJ-3d-L8T" secondAttribute="trailing" constant="135" id="h3i-XT-FIM"/>
+                            <constraint firstItem="5RO-6Z-aqL" firstAttribute="top" secondItem="7lU-AA-HRT" secondAttribute="bottom" constant="43" id="h8L-DW-a8c"/>
+                            <constraint firstItem="7lU-AA-HRT" firstAttribute="top" secondItem="UYJ-3d-L8T" secondAttribute="bottom" constant="8" id="iHZ-wv-Uj2"/>
+                            <constraint firstItem="XEy-GU-mfg" firstAttribute="leading" secondItem="5RO-6Z-aqL" secondAttribute="trailing" constant="25" id="kDG-jn-CzK"/>
+                            <constraint firstItem="Ybe-nk-gO4" firstAttribute="trailing" secondItem="XEy-GU-mfg" secondAttribute="trailing" constant="37" id="ngp-1o-42c"/>
+                            <constraint firstItem="b0n-Je-66z" firstAttribute="leading" secondItem="Ybe-nk-gO4" secondAttribute="leading" constant="51" id="sby-lG-FYI"/>
+                            <constraint firstItem="UYJ-3d-L8T" firstAttribute="top" secondItem="b0n-Je-66z" secondAttribute="bottom" constant="8" id="tht-2c-LYU"/>
+                            <constraint firstItem="SUh-Ic-anc" firstAttribute="top" secondItem="Ybe-nk-gO4" secondAttribute="top" constant="113" id="u3U-Os-gpN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ybe-nk-gO4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kp3-zQ-jF3"/>
+                    <connections>
+                        <outlet property="VerificationCodeText" destination="UYJ-3d-L8T" id="0HS-zm-KI7"/>
+                        <outlet property="invalidCodeMessage" destination="7lU-AA-HRT" id="FxD-sJ-2He"/>
+                        <outlet property="resendCodeButton" destination="5RO-6Z-aqL" id="sTA-AB-PZg"/>
+                        <outlet property="verifyButton" destination="XEy-GU-mfg" id="vZF-Bv-dYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eX-Pf-uHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="131.52709359605913"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wke-Gy-To0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SD0-dc-RDd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yp7-Wy-3Jd">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dLz-Ns-m0F" kind="relationship" relationship="rootViewController" id="6in-sh-8NG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnJ-vz-axu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>

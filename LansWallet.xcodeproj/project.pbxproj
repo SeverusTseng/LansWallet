@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C46F90C0E62A438270216678 /* Pods_LansWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4715853322C477143DC5C1E7 /* Pods_LansWallet.framework */; };
+		ED4A90E8216AB15A000FB8F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A90E7216AB15A000FB8F7 /* AppDelegate.swift */; };
+		ED4A90ED216AB15A000FB8F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A90EB216AB15A000FB8F7 /* Main.storyboard */; };
+		ED4A90EF216AB15C000FB8F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4A90EE216AB15C000FB8F7 /* Assets.xcassets */; };
+		ED4A90F2216AB15C000FB8F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A90F0216AB15C000FB8F7 /* LaunchScreen.storyboard */; };
+		ED85B004217BE3A9007BCC58 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85B003217BE3A9007BCC58 /* Api.swift */; };
+		ED85B006217BE857007BCC58 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85B005217BE857007BCC58 /* VerificationViewController.swift */; };
+		ED93155E216B0C2900926ECA /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED93155D216B0C2900926ECA /* LoginPageViewController.swift */; };
+		EDAB13A7216ABFA60087FAEF /* LansWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB13A6216ABFA60087FAEF /* LansWalletUITests.swift */; };
+		EDAB13B5216ABFE10087FAEF /* LansWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB13B4216ABFE10087FAEF /* LansWalletTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDAB13A9216ABFA60087FAEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4A90DC216AB15A000FB8F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4A90E3216AB15A000FB8F7;
+			remoteInfo = LansWallet;
+		};
+		EDAB13B7216ABFE10087FAEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4A90DC216AB15A000FB8F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4A90E3216AB15A000FB8F7;
+			remoteInfo = LansWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08F33D2BB7E9040CCAEB68D9 /* Pods-LansWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LansWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-LansWallet/Pods-LansWallet.release.xcconfig"; sourceTree = "<group>"; };
+		4715853322C477143DC5C1E7 /* Pods_LansWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LansWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65D0B0569FFF363DE2E881D /* Pods-LansWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LansWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LansWallet/Pods-LansWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		ED4A90E4216AB15A000FB8F7 /* LansWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LansWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4A90E7216AB15A000FB8F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED4A90EC216AB15A000FB8F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED4A90EE216AB15C000FB8F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED4A90F1216AB15C000FB8F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED4A90F3216AB15C000FB8F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED85B003217BE3A9007BCC58 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = SOURCE_ROOT; };
+		ED85B005217BE857007BCC58 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		ED93155D216B0C2900926ECA /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		EDAB13A4216ABFA60087FAEF /* LansWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LansWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAB13A6216ABFA60087FAEF /* LansWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LansWalletUITests.swift; sourceTree = "<group>"; };
+		EDAB13A8216ABFA60087FAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDAB13B2216ABFE10087FAEF /* LansWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LansWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAB13B4216ABFE10087FAEF /* LansWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LansWalletTests.swift; sourceTree = "<group>"; };
+		EDAB13B6216ABFE10087FAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED4A90E1216AB15A000FB8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46F90C0E62A438270216678 /* Pods_LansWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAB13A1216ABFA60087FAEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAB13AF216ABFE10087FAEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		291647C7FD9C04111A97EB54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4715853322C477143DC5C1E7 /* Pods_LansWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BFF36F339BD0DC2C257FA86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A65D0B0569FFF363DE2E881D /* Pods-LansWallet.debug.xcconfig */,
+				08F33D2BB7E9040CCAEB68D9 /* Pods-LansWallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED4A90DB216AB15A000FB8F7 = {
+			isa = PBXGroup;
+			children = (
+				ED4A90E6216AB15A000FB8F7 /* LansWallet */,
+				EDAB13A5216ABFA60087FAEF /* LansWalletUITests */,
+				EDAB13B3216ABFE10087FAEF /* LansWalletTests */,
+				ED4A90E5216AB15A000FB8F7 /* Products */,
+				4BFF36F339BD0DC2C257FA86 /* Pods */,
+				291647C7FD9C04111A97EB54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED4A90E5216AB15A000FB8F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A90E4216AB15A000FB8F7 /* LansWallet.app */,
+				EDAB13A4216ABFA60087FAEF /* LansWalletUITests.xctest */,
+				EDAB13B2216ABFE10087FAEF /* LansWalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED4A90E6216AB15A000FB8F7 /* LansWallet */ = {
+			isa = PBXGroup;
+			children = (
+				ED85B003217BE3A9007BCC58 /* Api.swift */,
+				ED4A90E7216AB15A000FB8F7 /* AppDelegate.swift */,
+				ED4A90EB216AB15A000FB8F7 /* Main.storyboard */,
+				ED4A90EE216AB15C000FB8F7 /* Assets.xcassets */,
+				ED4A90F0216AB15C000FB8F7 /* LaunchScreen.storyboard */,
+				ED4A90F3216AB15C000FB8F7 /* Info.plist */,
+				ED93155D216B0C2900926ECA /* LoginPageViewController.swift */,
+				ED85B005217BE857007BCC58 /* VerificationViewController.swift */,
+			);
+			path = LansWallet;
+			sourceTree = "<group>";
+		};
+		EDAB13A5216ABFA60087FAEF /* LansWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDAB13A6216ABFA60087FAEF /* LansWalletUITests.swift */,
+				EDAB13A8216ABFA60087FAEF /* Info.plist */,
+			);
+			path = LansWalletUITests;
+			sourceTree = "<group>";
+		};
+		EDAB13B3216ABFE10087FAEF /* LansWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDAB13B4216ABFE10087FAEF /* LansWalletTests.swift */,
+				EDAB13B6216ABFE10087FAEF /* Info.plist */,
+			);
+			path = LansWalletTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED4A90E3216AB15A000FB8F7 /* LansWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4A90F6216AB15C000FB8F7 /* Build configuration list for PBXNativeTarget "LansWallet" */;
+			buildPhases = (
+				2EF532C7CAC1F83EB2DCDC79 /* [CP] Check Pods Manifest.lock */,
+				ED4A90E0216AB15A000FB8F7 /* Sources */,
+				ED4A90E1216AB15A000FB8F7 /* Frameworks */,
+				ED4A90E2216AB15A000FB8F7 /* Resources */,
+				9FAB8C63B335991B778DE3E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LansWallet;
+			productName = LansWallet;
+			productReference = ED4A90E4216AB15A000FB8F7 /* LansWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDAB13A3216ABFA60087FAEF /* LansWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDAB13AD216ABFA60087FAEF /* Build configuration list for PBXNativeTarget "LansWalletUITests" */;
+			buildPhases = (
+				EDAB13A0216ABFA60087FAEF /* Sources */,
+				EDAB13A1216ABFA60087FAEF /* Frameworks */,
+				EDAB13A2216ABFA60087FAEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDAB13AA216ABFA60087FAEF /* PBXTargetDependency */,
+			);
+			name = LansWalletUITests;
+			productName = LansWalletUITests;
+			productReference = EDAB13A4216ABFA60087FAEF /* LansWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EDAB13B1216ABFE10087FAEF /* LansWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDAB13B9216ABFE10087FAEF /* Build configuration list for PBXNativeTarget "LansWalletTests" */;
+			buildPhases = (
+				EDAB13AE216ABFE10087FAEF /* Sources */,
+				EDAB13AF216ABFE10087FAEF /* Frameworks */,
+				EDAB13B0216ABFE10087FAEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDAB13B8216ABFE10087FAEF /* PBXTargetDependency */,
+			);
+			name = LansWalletTests;
+			productName = LansWalletTests;
+			productReference = EDAB13B2216ABFE10087FAEF /* LansWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED4A90DC216AB15A000FB8F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					logo,
+				);
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "ruolan zeng";
+				TargetAttributes = {
+					ED4A90E3216AB15A000FB8F7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					EDAB13A3216ABFA60087FAEF = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = ED4A90E3216AB15A000FB8F7;
+					};
+					EDAB13B1216ABFE10087FAEF = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = ED4A90E3216AB15A000FB8F7;
+					};
+				};
+			};
+			buildConfigurationList = ED4A90DF216AB15A000FB8F7 /* Build configuration list for PBXProject "LansWallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED4A90DB216AB15A000FB8F7;
+			productRefGroup = ED4A90E5216AB15A000FB8F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED4A90E3216AB15A000FB8F7 /* LansWallet */,
+				EDAB13A3216ABFA60087FAEF /* LansWalletUITests */,
+				EDAB13B1216ABFE10087FAEF /* LansWalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED4A90E2216AB15A000FB8F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4A90F2216AB15C000FB8F7 /* LaunchScreen.storyboard in Resources */,
+				ED4A90EF216AB15C000FB8F7 /* Assets.xcassets in Resources */,
+				ED4A90ED216AB15A000FB8F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAB13A2216ABFA60087FAEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAB13B0216ABFE10087FAEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EF532C7CAC1F83EB2DCDC79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LansWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FAB8C63B335991B778DE3E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LansWallet/Pods-LansWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LansWallet/Pods-LansWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED4A90E0216AB15A000FB8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED93155E216B0C2900926ECA /* LoginPageViewController.swift in Sources */,
+				ED85B006217BE857007BCC58 /* VerificationViewController.swift in Sources */,
+				ED85B004217BE3A9007BCC58 /* Api.swift in Sources */,
+				ED4A90E8216AB15A000FB8F7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAB13A0216ABFA60087FAEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAB13A7216ABFA60087FAEF /* LansWalletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAB13AE216ABFE10087FAEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAB13B5216ABFE10087FAEF /* LansWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDAB13AA216ABFA60087FAEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4A90E3216AB15A000FB8F7 /* LansWallet */;
+			targetProxy = EDAB13A9216ABFA60087FAEF /* PBXContainerItemProxy */;
+		};
+		EDAB13B8216ABFE10087FAEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4A90E3216AB15A000FB8F7 /* LansWallet */;
+			targetProxy = EDAB13B7216ABFE10087FAEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED4A90EB216AB15A000FB8F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED4A90EC216AB15A000FB8F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED4A90F0216AB15C000FB8F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED4A90F1216AB15C000FB8F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED4A90F4216AB15C000FB8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED4A90F5216AB15C000FB8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED4A90F7216AB15C000FB8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65D0B0569FFF363DE2E881D /* Pods-LansWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LansWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruolanzeng.LansWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED4A90F8216AB15C000FB8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F33D2BB7E9040CCAEB68D9 /* Pods-LansWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LansWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruolanzeng.LansWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDAB13AB216ABFA60087FAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LansWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruolanzeng.LansWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LansWallet;
+			};
+			name = Debug;
+		};
+		EDAB13AC216ABFA60087FAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LansWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruolanzeng.LansWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LansWallet;
+			};
+			name = Release;
+		};
+		EDAB13BA216ABFE10087FAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LansWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruolanzeng.LansWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LansWallet.app/LansWallet";
+			};
+			name = Debug;
+		};
+		EDAB13BB216ABFE10087FAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LansWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruolanzeng.LansWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LansWallet.app/LansWallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED4A90DF216AB15A000FB8F7 /* Build configuration list for PBXProject "LansWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4A90F4216AB15C000FB8F7 /* Debug */,
+				ED4A90F5216AB15C000FB8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4A90F6216AB15C000FB8F7 /* Build configuration list for PBXNativeTarget "LansWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4A90F7216AB15C000FB8F7 /* Debug */,
+				ED4A90F8216AB15C000FB8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDAB13AD216ABFA60087FAEF /* Build configuration list for PBXNativeTarget "LansWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAB13AB216ABFA60087FAEF /* Debug */,
+				EDAB13AC216ABFA60087FAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDAB13B9216ABFE10087FAEF /* Build configuration list for PBXNativeTarget "LansWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAB13BA216ABFE10087FAEF /* Debug */,
+				EDAB13BB216ABFE10087FAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED4A90DC216AB15A000FB8F7 /* Project object */;
+}
